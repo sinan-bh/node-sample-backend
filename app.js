@@ -4,7 +4,7 @@ const cors = require('cors');
 const app = express();
 
 const corsOption = {
-    origin: "https://node-sample-frontend.vercel.app/"
+    origin: "https://node-sample-backend-2.onrender.com"
 }
 app.use(cors(corsOption)); 
 app.use(express.json());
