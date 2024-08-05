@@ -2,7 +2,11 @@ const express = require('express');
 const cors = require('cors');
 
 const app = express();
-app.use(cors()); 
+
+const corsOption = {
+    origin: "https://node-sample-frontend.vercel.app/"
+}
+app.use(cors(corsOption)); 
 app.use(express.json());
 app.use((req,res,next)=>{
     console.log('start');
